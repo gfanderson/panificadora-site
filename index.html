@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panificadora Pão Quente</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+   background: url('images/OIP.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #8B4513;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #deb887;
+}
+
+/* Produtos */
+.produtos {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.botoes-categorias {
+  margin: 20px 0;
+}
+
+.botoes-categorias button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background: #8B4513;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* GRID RESPONSIVO */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD MELHORADO */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGENS PADRONIZADAS */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* SOBRE */
+.sobre {
+  padding: 40px 20px;
+  background: #fff3e0;
+  text-align: center;
+}
+
+/* DELIVERY */
+.delivery {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 24px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+}
+
+/* FOOTER */
+.footer {
+  background: #8B4513;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Panificadora Pão Quente</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#delivery">Delivery</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Pães fresquinhos todos os dias 🥖</h2>
+  <p>Qualidade e tradição desde 1998</p>
+</section>
+
+<section id="produtos" class="produtos">
+  <h2>Nossos Produtos</h2>
+
+  <div class="botoes-categorias">
+    <button>Pães</button>
+    <button>Queijos</button>
+    <button>Laticínios</button>
+  </div>
+
+  <div class="grid-produtos">
+
+```
+<div class="card">
+  <img src="images/OIP.jpg" alt="Pão Francês">
+  <h3>Pão Francês</h3>
+  <p>Crocante por fora e macio por dentro. Feito diariamente com ingredientes selecionados.</p>
+</div>
+
+<div class="card">
+  <img src="images/queijo-minas.jpg..jpg" alt="Queijo Minas">
+  <h3>Queijo Minas</h3>
+  <p>Produção artesanal com sabor autêntico da fazenda.</p>
+</div>
+
+<div class="card">
+  <img src="images/leite-integral.jpg" alt="Leite Integral">
+  <h3>Leite Integral</h3>
+  <p>Leite fresco direto da fazenda, rico e nutritivo.</p>
+</div>
+```
+
+  </div>
+</section>
+
+<section id="sobre" class="sobre">
+  <h2>Sobre a Panificadora</h2>
+  <p>
+    Fundada em 1998, a Panificadora Pão Quente nasceu com o objetivo de levar produtos frescos e de qualidade para a comunidade.
+    Trabalhamos com ingredientes selecionados e receitas tradicionais para garantir o melhor sabor.
+  </p>
+</section>
+
+<section id="delivery" class="delivery">
+  <h2>Delivery</h2>
+  <p>Receba nossos produtos no conforto da sua casa!</p>
+
+  <a href="https://wa.me/5599999999999" target="_blank" class="btn-whatsapp">
+    Pedir pelo WhatsApp
+  </a>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Panificadora Pão Quente</p>
+</footer>
+
+</body>
+</html>
+
+
